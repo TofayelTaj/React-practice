@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './Components/Card';
 import Data from './Data.json';
 import Card2 from './Components/Card2';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
 
@@ -17,7 +18,6 @@ function App() {
     <div>
     {items}
     <Card2  name="tofayel" />
-    <Card2 />
     </div>
   );
 }
