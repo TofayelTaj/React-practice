@@ -13,11 +13,18 @@ function App() {
 
   items = Data.map((item) => <Card name={item.name} address={item.address} /> )
 
+  let isLogedIn = true;
+  const viewPage = (isLogedIn ? <Card2 /> : <Card name="tofayel ahmed" address="Badda, Dhaka"/>)
+
 
   return (
     <div>
-    {items}
-    <Card2  name="tofayel" />
+    {/* {items}
+
+    <Card2  name="tofayel" /> */}
+
+    {viewPage}
+    {/* {items} */}
     </div>
   );
 }

@@ -9,7 +9,8 @@ class Card2 extends Component {
         super(props)
 
         this.state = {
-            count : 0
+            count : 0,
+            text : ''
         }
 
     }
@@ -29,6 +30,12 @@ class Card2 extends Component {
         }
     }
 
+    handleOnChange = (e) => {
+        this.setState({
+            text : e.target.value
+        })
+    }
+
     render(){
         return <div>
             <h2>hello class Component, {this.props.name}</h2>
@@ -36,6 +43,9 @@ class Card2 extends Component {
             <h2>Count : {this.state.count}</h2>
             <Button className="p-3 m-4" onClick={this.increment} variant="warning"> + </Button>
             <Button className="p-3" onClick={this.decrement}> - </Button>
+            <br></br>
+            <input type="text" onChange={this.handleOnChange}/>
+            <p>{this.state.text}</p>
         </div>
     }
 
