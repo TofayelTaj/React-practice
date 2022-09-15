@@ -3,6 +3,7 @@ import Card from './Components/Card';
 import Data from './Data.json';
 import Card2 from './Components/Card2';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import HookUseState from './Components/HookUseState';
 
 function App() {
 
@@ -18,13 +19,18 @@ function App() {
 
 
   return (
-    <div>
-    {/* {items}
+    <div className="container">
+     
+          {items}
+      
 
-    <Card2  name="tofayel" /> */}
+      
+    
+    {/* <Card2  name="tofayel" />  */}
 
-    {viewPage}
-    {/* {items} */}
+     {viewPage} 
+     <HookUseState />
+   
     </div>
   );
 }

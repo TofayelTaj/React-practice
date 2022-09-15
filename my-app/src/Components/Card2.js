@@ -16,7 +16,6 @@ class Card2 extends Component {
     }
 
     increment = () => {
-        console.log("clicked");
         this.setState({
             count : this.state.count + 1
         })
